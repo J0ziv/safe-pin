@@ -93,9 +93,9 @@ class MainActivity : AppCompatActivity() {
 
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
 
-        // The correct way to find and assign the views
+       
         btnAddContact = findViewById(R.id.btnAddContact)
-        btnSendLocation = findViewById(R.id.imageButton) // Your large center button
+        btnSendLocation = findViewById(R.id.imageButton)
         btnShowContacts = findViewById(R.id.btnShowContacts)
 
         loadContacts()
@@ -235,7 +235,7 @@ class MainActivity : AppCompatActivity() {
                 }
             }
 
-            // ✅ Show toast AFTER sending
+           
             if (sentCount > 0) {
                 Toast.makeText(this, "Sent SOS to $sentCount contacts.", Toast.LENGTH_SHORT).show()
             } else {
