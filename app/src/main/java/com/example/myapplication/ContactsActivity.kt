@@ -16,7 +16,7 @@ class ContactsActivity : AppCompatActivity() {
 
         val listView: ListView = findViewById(R.id.contactsListView)
 
-        // Load saved contacts
+        
         val prefs = getSharedPreferences("contacts_prefs", Context.MODE_PRIVATE)
         val savedSet = prefs.getStringSet("contacts_list", emptySet()) ?: emptySet()
 
